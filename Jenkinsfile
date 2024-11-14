@@ -6,7 +6,7 @@ pipeline {
           }
    parameters {
         string (name: 'version', defaulvalues: '1.0.0', description: 'what is artifact versioń')
-        string (name: 'environment', defaulvalues: 'dev', description: 'what is the environment')
+        string (name: 'environment', defaulvalue: 'dev', description: 'what is the environment')
    }
 
     stages {
