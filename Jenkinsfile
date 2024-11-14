@@ -5,8 +5,8 @@ pipeline {
           NEXUS_URL = '3.88.31.126:8081'
           }
    parameters {
-        string (name: 'version', defaultValue: '1.0.0', description: 'what is artifact versioń')
-        string (name: 'environment', defaultValue: 'dev', description: 'what is the environment')
+        string (name: 'version', defaultValue: '', description: 'what is artifact versioń')
+        string (name: 'environment', defaultValue: '', description: 'what is the environment')
     
    }
 
