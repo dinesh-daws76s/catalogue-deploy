@@ -25,6 +25,7 @@ pipeline {
              steps {
                 sh """
                     ls
+                    whoami
                     cd terraform
                     terraform init -reconfigure               
   
