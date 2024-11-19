@@ -14,6 +14,7 @@ pipeline {
         stage('Build') {
              steps {
                 sh """
+                      
                       echo "version: ${params.version}"
                       echo "environment: ${params.environment}"
   
@@ -23,6 +24,7 @@ pipeline {
         stage('Terraform init ') {
              steps {
                 sh """
+                    ls
                     cd terraform
                     terraform init -reconfigure               
   
