@@ -10,7 +10,7 @@ terraform {
 terraform {
   backend "s3" {
     bucket = "dineshdevops.online"
-    key    = "test-ec2_modules-1"
+    key    = "test-ec2_modules"
     region = "us-east-1"
     dynamodb_table = "dineshdevops.online-locking"
   }
