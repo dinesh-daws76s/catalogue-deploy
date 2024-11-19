@@ -3,7 +3,6 @@ pipeline {
     environment {
           packageVersion = ''
           NEXUS_URL = '50.17.156.242:8081'
-          environment {
           AWS_ACCESS_KEY_ID = 'AKIAT72HVGKWYUSA6IEN'
           AWS_SECRET_ACCESS_KEY = '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'
           AWS_REGION = 'us-east-1'
@@ -52,4 +51,3 @@ pipeline {
     }
   }
  }
-}
