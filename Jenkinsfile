@@ -20,6 +20,15 @@ pipeline {
                 """
             }
         }
+        stage('Terraform init ') {
+             steps {
+                sh """
+                    cd terraform
+                    terraform init -reconfigure               
+  
+                """
+            }
+        }
     }
   post { 
     always {
