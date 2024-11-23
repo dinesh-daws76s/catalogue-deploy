@@ -37,7 +37,18 @@ pipeline {
                 """
             }
         }
+        stage('Terraform plan ') {
+             steps {
+                sh """
+                
+                terraform plan -var="app_version=${params.version}"               
+  
+                """
+            }
+        }
     }
+
+  
   post { 
     always {
         echo 'This will execute always when job executed'
