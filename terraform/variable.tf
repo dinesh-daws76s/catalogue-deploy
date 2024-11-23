@@ -39,3 +39,9 @@ variable "zone_name" {
   type        = string
   default     = "dineshdevops.online"
 }
+
+
+variable "app_version" {
+  default     = {}
+  
+}
